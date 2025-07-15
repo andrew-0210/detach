@@ -1,7 +1,7 @@
 import Image from "next/image";
-import detachLogo from "../../app/assets/detach_logo.svg";
+import detachLogo from "@/app/assets/detach_logo.svg";
 
-import Container from "../ui/Container";
+import Container from "@/components/ui/Container";
 import NavLinks from "./Navlinks";
 import Link from "next/link";
 

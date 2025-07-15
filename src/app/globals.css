@@ -80,7 +80,7 @@ header {
 	@apply flex flex-col justify-center items-center gap-[1.5rem];
 }
 h2 {
-	@apply text-[4rem] text-center;
+	@apply text-[2.5rem] lg:text-[4rem] text-center;
 }
 
 /* Components */
