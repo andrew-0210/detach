@@ -1,26 +1,105 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #ffffff;
+	--foreground: #211c28;
+
+	--paragraph: #736783;
+	--primary-button: #08f2ea;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+	--font-sans: var(--font-nexaround);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-paragraph: var(--paragraph);
+	--color-button: var(--primary-button);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-nexaround);
+}
+
+/* Common Styles */
+.container {
+	@apply px-[1.25rem] md:max-w-[1240px] md:mx-auto max-w-full;
+}
+.body-text {
+	@apply text-[1.125rem] md:text-[1.25rem] text-paragraph font-semibold -tracking-[0.5px] leading-[140%];
+}
+.main-text {
+	@apply font-bold -tracking-[2.5px] md:leading-[75px] leading-[48px];
+}
+.imageContainer {
+	@apply relative w-full min-h-[401px] md:h-full;
+}
+.outline-border {
+	@apply px-[1rem] py-[0.5rem] border-[2px] rounded-full font-semibold text-[1rem];
+}
+.content-container {
+	@apply max-w-full md:max-w-[50%];
+}
+
+/* Navigation */
+header {
+	@apply fixed top-[20px] w-full z-[999];
+}
+.navigation {
+	@apply flex justify-between  items-center gap-[4rem] px-[1.25rem] py-[1rem] rounded-full bg-background;
+	box-shadow: 2px 2px 4px rgba(33, 28, 40, 0.1);
+}
+.navlinks {
+	@apply flex flex-col lg:flex-row gap-[1rem] lg:gap-[2rem] text-[1.125rem] font-bold whitespace-nowrap lg:items-center;
+}
+.active {
+	@apply text-foreground;
+}
+.inactive {
+	@apply text-paragraph;
+}
+
+/* Hero Section */
+.hero-content {
+	@apply flex flex-col gap-[1.5rem] md:items-start items-center justify-center text-center md:text-start;
+}
+.hero-section {
+	@apply flex relative h-full lg:h-screen items-center flex-col-reverse py-[8rem] md:flex-row gap-8;
+}
+.hero-heading {
+	@apply text-[2.75rem] md:text-[4.5rem];
+}
+
+/* How it works */
+.work-container {
+	@apply flex items-center justify-center flex-col py-[5rem];
+}
+.work-content {
+	@apply flex flex-col justify-center items-center gap-[1.5rem];
+}
+h2 {
+	@apply text-[4rem] text-center;
+}
+
+/* Components */
+@layer components {
+	.primary-button {
+		@apply whitespace-nowrap;
+		padding: 0.75rem 1.5rem;
+		border: 2px solid;
+		border-radius: 50;
+		background-color: var(--primary-button);
+		cursor: pointer;
+		box-shadow: 4px 4px 0px #211c28;
+		font-size: 1.125rem;
+		font-weight: 700;
+		transition: all 0.2s ease;
+		display: flex;
+		gap: 4px;
+	}
+	.primary-button:hover {
+		box-shadow: 1px 1px 0px #211c28;
+	}
 }
