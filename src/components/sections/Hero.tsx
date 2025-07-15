@@ -11,7 +11,7 @@ export default function Hero() {
 				<div className="hero-content content-container">
 					<span className="outline-border">Ready to Detach?</span>
 					<h1 className="hero-heading main-text">
-						That screen glow isn't sunlight.
+						That screen glow isn&apos;t sunlight.
 					</h1>
 					<p className="body-text">
 						Detach is your app to finally reduce your screen time. Win back 2
