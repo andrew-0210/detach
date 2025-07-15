@@ -66,7 +66,7 @@ export default function NavLinks() {
 					<div className="flex justify-end items-center p-4 ">
 						<Button
 							buttonHandler={menuHandler}
-							className="p-2">
+							>
 							<AiOutlineClose size={24} />
 						</Button>
 					</div>
