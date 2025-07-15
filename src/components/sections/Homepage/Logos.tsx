@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Logos() {
 	return (
 		<Container>
-			<section className="flex flex-wrap gap-8 items-center justify-between py-[5rem]">
+			<section className="flex flex-wrap gap-8 items-center justify-between py-[3rem] lg:py-[5rem]">
 				{LOGOS.map((img, id) => (
 					<div
 						key={id}

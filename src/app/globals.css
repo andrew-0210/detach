@@ -66,7 +66,7 @@ header {
 	@apply flex flex-col gap-[1.5rem] md:items-start items-center justify-center text-center md:text-start;
 }
 .hero-section {
-	@apply flex relative h-full lg:h-screen items-center flex-col-reverse py-[8rem] md:flex-row gap-8;
+	@apply flex relative h-full lg:h-screen items-center flex-col-reverse pt-[8rem] pb-[3rem] lg:pb-[5rem] md:flex-row gap-8;
 }
 .hero-heading {
 	@apply text-[2.75rem] md:text-[4.5rem];
@@ -74,7 +74,7 @@ header {
 
 /* How it works */
 .work-container {
-	@apply flex items-center justify-center flex-col py-[5rem];
+	@apply flex items-center justify-center flex-col py-[3rem] lg:py-[5rem];
 }
 .work-content {
 	@apply flex flex-col justify-center items-center gap-[1.5rem];
