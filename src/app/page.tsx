@@ -1,6 +1,6 @@
-import Hero from "@/components/sections/Hero";
-import HowItWorks from "@/components/sections/HowItWorks";
-import Logos from "@/components/sections/Logos";
+import Hero from "@/components/sections/Homepage/Hero";
+import HowItWorks from "@/components/sections/Homepage/HowItWorks";
+import Logos from "@/components/sections/Homepage/Logos";
 
 export default function Home() {
 	return (

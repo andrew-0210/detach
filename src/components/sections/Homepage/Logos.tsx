@@ -1,5 +1,5 @@
 import { LOGOS } from "@/constants/data";
-import Container from "../ui/Container";
+import Container from "../../ui/Container";
 import Image from "next/image";
 
 export default function Logos() {

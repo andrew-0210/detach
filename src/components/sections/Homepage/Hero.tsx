@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Button from "../ui/Button";
-import heroImage from "../../app/assets/hero.png";
-import appleIcon from "../../app/assets/apple.svg";
-import Container from "../ui/Container";
+import Button from "@/components/ui/Button";
+import heroImage from "@/app/assets/hero.png";
+import appleIcon from "@/app/assets/apple.svg";
+import Container from "@/components/ui/Container";
 
 export default function Hero() {
 	return (
