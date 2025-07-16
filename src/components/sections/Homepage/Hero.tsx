@@ -15,7 +15,7 @@ export default function Hero() {
 					</h1>
 					<p className="body-text">
 						Detach is your app to finally reduce your screen time. Win back 2
-						hours a day and do mre things you will remember. Detach now for
+						hours a day and do more things you will remember. Detach now for
 						free!
 					</p>
 					<Button>

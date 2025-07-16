@@ -31,16 +31,16 @@ body {
 	@apply text-[1.125rem] md:text-[1.25rem] text-paragraph font-semibold -tracking-[0.5px] leading-[140%];
 }
 .main-text {
-	@apply font-bold -tracking-[2.5px] md:leading-[75px] leading-[48px];
+	@apply font-bold -tracking-[2.5px] lg:leading-[75px] leading-[48px];
 }
 .imageContainer {
-	@apply relative w-full min-h-[401px] md:h-full;
+	@apply relative w-full min-h-[401px] sm:min-h-[700px] lg:h-full;
 }
 .outline-border {
 	@apply px-[1rem] py-[0.5rem] border-[2px] rounded-full font-semibold text-[1rem];
 }
 .content-container {
-	@apply max-w-full md:max-w-[50%];
+	@apply max-w-full sm:max-w-[60%] lg:max-w-[50%];
 }
 
 /* Navigation */
@@ -63,10 +63,10 @@ header {
 
 /* Hero Section */
 .hero-content {
-	@apply flex flex-col gap-[1.5rem] md:items-start items-center justify-center text-center md:text-start;
+	@apply flex flex-col gap-[1.5rem] lg:items-start items-center justify-center text-center lg:text-start;
 }
 .hero-section {
-	@apply flex relative h-full lg:h-screen items-center flex-col-reverse pt-[8rem] pb-[3rem] lg:pb-[5rem] md:flex-row gap-8;
+	@apply flex relative h-full lg:h-screen items-center flex-col-reverse sm:flex-col pt-[8rem] pb-[3rem] lg:pb-[5rem] lg:flex-row gap-8;
 }
 .hero-heading {
 	@apply text-[2.75rem] md:text-[4.5rem];
@@ -80,7 +80,7 @@ header {
 	@apply flex flex-col justify-center items-center gap-[1.5rem];
 }
 h2 {
-	@apply text-[2.5rem] lg:text-[4rem] text-center;
+	@apply text-[2.5rem]  lg:text-[4rem] text-center;
 }
 
 /* Components */

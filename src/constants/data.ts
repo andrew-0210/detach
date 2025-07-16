@@ -6,6 +6,12 @@ import StartupBW from "../app/assets/logos/startupBW.svg";
 import SocialImpact from "../app/assets/logos/socialimpact.png";
 import Arise from "../app/assets/logos/arise.png";
 
+import appBlocker from "@/app/assets/appblockers.svg";
+import snoozeStack from "@/app/assets/snooze-stack.svg";
+import Challenges from "@/app/assets/win_challenges.svg";
+import trackGoals from "@/app/assets/goal.svg";
+import Community from "@/app/assets/community.svg";
+
 export const NAVLINKS = [
 	{
 		label: "Our Product",
@@ -49,5 +55,37 @@ export const LOGOS = [
 	{
 		src: Arise,
 		alt: "Arise Logo",
+	},
+];
+
+export const GRIDDATA = [
+	{
+		label: "App Blockers",
+		description:
+			"You're in control of your limits. Set blockers and tame the racoon in you.",
+		featImg: appBlocker,
+	},
+	{
+		label: "Collect snooze coins",
+		description:
+			"Collect snooze coins and use them for some extra screen-time or prizes.",
+		featImg: snoozeStack,
+	},
+	{
+		label: "Win challenges",
+		description:
+			"Prove your worth to yourself and others. Only the strongest Detacher will remain.",
+		featImg: Challenges,
+	},
+	{
+		label: "Track goals",
+		description: "Set up your progress goals, stick to it, and achieve them.",
+		featImg: trackGoals,
+	},
+	{
+		label: "Community",
+		description:
+			"Prove your worth to yourself and others. Only the strongest Detacher will remain.",
+		featImg: Community,
 	},
 ];
