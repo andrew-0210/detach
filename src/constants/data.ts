@@ -12,7 +12,23 @@ import Challenges from "@/app/assets/win_challenges.svg";
 import trackGoals from "@/app/assets/goal.svg";
 import Community from "@/app/assets/community.svg";
 
-export const NAVLINKS = [
+type Navlinks = {
+	label: string;
+	href: string;
+}[];
+
+type Logos = {
+	src: string;
+	alt: string;
+}[];
+
+type Griddata = {
+	label: string;
+	description: string;
+	featImg: string;
+}[];
+
+export const NAVLINKS: Navlinks = [
 	{
 		label: "Our Product",
 		href: "/",
@@ -27,7 +43,7 @@ export const NAVLINKS = [
 	},
 ];
 
-export const LOGOS = [
+export const LOGOS: Logos = [
 	{
 		src: BadenWurttemburg,
 		alt: "Baden-Wurttemburg Logo",
@@ -58,7 +74,7 @@ export const LOGOS = [
 	},
 ];
 
-export const GRIDDATA = [
+export const GRIDDATA: Griddata = [
 	{
 		label: "App Blockers",
 		description:
