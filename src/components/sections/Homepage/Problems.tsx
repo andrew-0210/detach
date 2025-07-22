@@ -25,7 +25,7 @@ export default function Problems() {
 
 			<Container className="flex sm:items-start justify-end bg-[#adf7db] py-[3rem]  sm:bg-transparent">
 				<div className="hero-content content-container ">
-					<span className="outline-border">What's the problem?</span>
+					<span className="outline-border">What&apos;s the problem?</span>
 					<h1 className="hero-heading main-text">
 						A little bit too much screentime.
 					</h1>
